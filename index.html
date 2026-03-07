@@ -1,235 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" href="favicon.png">
-  
-  <title>Tech Made Easy ZA</title>
+<link rel="icon" type="image/png" href="favicon.png">
 
-  <style>
-    :root {
-      --primary: #000000;
-      --secondary: #0f9d58;
-      --accent: #16c172;
-      --bg: #ffffff;
-      --text: #1a1a1a;
-      --card: #ffffff;
-    }
+<title>Tech Made Easy ZA</title>
 
-    * {
-      box-sizing: border-box;
-    }
+<style>
 
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+:root{
+--primary:#000000;
+--secondary:#6ED34B;
+--accent:#6ED34B;
+--bg:#000000;
+--text:#ffffff;
+--card:#111111;
+}
 
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 3rem 1.5rem;
-      text-align: center;
-    }
+*{box-sizing:border-box;}
 
-    header h1 {
-      margin: 0 0 0.5rem 0;
-      font-size: 2.2rem;
-    }
+body{
+margin:0;
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+}
 
-    header p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: auto;
-      opacity: 0.95;
-    }
+header{
+background:linear-gradient(135deg,#000000,#1a1a1a);
+padding:3rem 1.5rem;
+text-align:center;
+}
 
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2.5rem 1.5rem;
-    }
+header h1{
+margin:0;
+font-size:2.4rem;
+color:var(--secondary);
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
+header p{
+max-width:700px;
+margin:auto;
+opacity:.9;
+}
 
-    .card {
-      background: var(--card);
-      padding: 1.75rem;
-      border-radius: 14px;
-      border: 1px solid #e5e5e5;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-    }
+main{
+max-width:1000px;
+margin:auto;
+padding:2.5rem 1.5rem;
+}
 
-    h2 {
-      margin-top: 0;
-      color: var(--secondary);
-      font-size: 1.4rem;
-    }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:1.5rem;
+}
 
-    ul {
-      padding-left: 1.2rem;
-    }
+.card{
+background:var(--card);
+padding:1.75rem;
+border-radius:14px;
+border:2px solid var(--secondary);
+}
 
-    li {
-      margin-bottom: 0.5rem;
-    }
+h2{
+margin-top:0;
+color:var(--secondary);
+}
 
-    .highlight {
-      background: #eafaf1;
-      border-left: 5px solid var(--secondary);
-      padding: 1.5rem;
-      border-radius: 10px;
-      margin: 2.5rem 0;
-    }
+ul{
+padding-left:1.2rem;
+}
 
-    .cta {
-      background: var(--primary);
-      color: white;
-      padding: 3rem 1.5rem;
-      text-align: center;
-    }
+.highlight{
+background:#0f1a0f;
+border-left:5px solid var(--secondary);
+padding:1.5rem;
+border-radius:10px;
+margin:2.5rem 0;
+}
 
-    .cta h2 {
-      color: white;
-      margin-bottom: 0.5rem;
-    }
+.cta{
+background:#000;
+padding:3rem 1.5rem;
+text-align:center;
+border-top:2px solid var(--secondary);
+}
 
-    .cta p {
-      margin-bottom: 1.5rem;
-      font-size: 1.05rem;
-    }
+.cta-button{
+display:inline-block;
+background:var(--accent);
+color:#000;
+font-weight:600;
+text-decoration:none;
+padding:.9rem 1.6rem;
+border-radius:999px;
+margin:.4rem;
+cursor:pointer;
+}
 
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-      color: #6b7280;
-      background: #ffffff;
-    }
+.cta-button.secondary{
+background:transparent;
+color:white;
+border:2px solid white;
+}
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+footer{
+text-align:center;
+padding:1.5rem;
+font-size:.9rem;
+background:#111;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Tech Made Easy ZA</h1>
-  <p>Clear, practical guidance to help people of all ages use technology safely and confidently — no technical background required.</p>
+<h1>Tech Made Easy ZA</h1>
+<p>Simple ongoing tech support for parents, seniors & families.</p>
 </header>
 
 <main>
-  <div class="grid">
-    <div class="card">
-      <h2>Who These Classes Are For</h2>
-      <ul>
-        <li>Parents who want to protect their children online</li>
-        <li>Seniors learning safe internet and online banking</li>
-        <li>Seniors new to social media and digital platforms</li>
-        <li>Small business owners looking to improve online security</li>
-      </ul>
-    </div>
 
-    <div class="card">
-      <h2>What You Will Learn</h2>
-      <ul>
-        <li>How to identify phishing and online scams</li>
-        <li>Creating and managing strong passwords</li>
-        <li>Safe social media and privacy settings</li>
-        <li>Protecting devices from malware</li>
-        <li>Safe online payments and banking</li>
-      </ul>
-    </div>
+<div class="grid">
 
-    <div class="card">
-      <h2>How the Classes Work</h2>
-      <ul>
-        <li>Live online or in-person sessions</li>
-        <li>Small groups or one-on-one</li>
-        <li>Plain-language explanations</li>
-        <li>Printable safety checklist included</li>
-      </ul>
-    </div>
-  </div>
+<div class="card">
+<h2>Who We Help</h2>
+<ul>
+<li>Parents managing family devices</li>
+<li>Seniors learning technology</li>
+<li>Families needing simple tech help</li>
+<li>Small businesses improving security</li>
+</ul>
+</div>
 
-  <div class="highlight">
-    These sessions focus on real-life situations people face every day — email scams, fake messages, unsafe links, and privacy mistakes — and explain how to handle them calmly and confidently.
-  </div>
+<div class="card">
+<h2>What We Do</h2>
+<ul>
+<li>Fix common tech problems</li>
+<li>Set parental controls</li>
+<li>Protect accounts from scams</li>
+<li>Help with devices and apps</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>How It Works</h2>
+<ul>
+<li>Online or in-person support</li>
+<li>Simple step-by-step guidance</li>
+<li>Friendly help without jargon</li>
+<li>Ongoing tech support available</li>
+</ul>
+</div>
+
+</div>
+
+<div class="highlight">
+We focus on everyday problems — slow devices, scams, confusing apps, and internet issues — and explain them clearly so you feel confident using technology.
+</div>
+
 </main>
 
 <div class="cta">
-  <h2>Book a Session With Tech Made Easy ZA</h2>
-  <p>Want to get in touch with us?</p>
-  <a href="#" id="emailButton" class="cta-button">Email Us</a>
-  <a href="courses.html" class="cta-button secondary">View Courses</a>
+
+<h2>Talk To Us</h2>
+
+<a href="#" id="emailButton" class="cta-button">Email Us</a>
+
+<a href="courses.html" class="cta-button secondary">View Services</a>
 
 <script>
-  const button = document.getElementById('emailButton');
 
-  button.addEventListener('click', () => {
-    const gmailURL = "https://mail.google.com/mail/?view=cm&fs=1&to=techmadeeasy21@gmail.com.com&su=Tech%20Made%20Easy%20ZA%20Session%20Request&body=Hello,%0A%0AI%20would%20like%20more%20information%20about%20your%20technology%20classes.%0A%0AThank%20you.";
-    const mailtoURL = "mailto:techmadeeasy21@gmail.com?subject=Tech%20Made%20Easy%20ZA%20Session%20Request&body=Hello,%0A%0AI%20would%20like%20more%20information%20about%20your%20technology%20classes.%0A%0AThank%20you.";
+const button = document.getElementById('emailButton');
 
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+button.addEventListener('click', () => {
 
-    if (isMobile) {
-      window.location.href = mailtoURL;
-    } else {
-      window.open(gmailURL, "_blank");
-    }
-  });
+const gmailURL = "https://mail.google.com/mail/?view=cm&fs=1&to=techmadeeasy21@gmail.com&su=Tech%20Support%20Request&body=Hello,%0A%0AI%20would%20like%20more%20information%20about%20Tech%20Made%20Easy%20ZA.%0A%0AThank%20you.";
+
+const mailtoURL = "mailto:techmadeeasy21@gmail.com?subject=Tech%20Support%20Request&body=Hello,%0A%0AI%20would%20like%20more%20information%20about%20Tech%20Made%20Easy%20ZA.%0A%0AThank%20you.";
+
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (isMobile){
+window.location.href = mailtoURL;
+}else{
+window.open(gmailURL,"_blank");
+}
+
+});
+
 </script>
-
-<style>
-.cta-button {
-  display: inline-block;
-  background: var(--accent);
-  color: #000;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.9rem 1.6rem;
-  border-radius: 999px;
-  transition: background 0.3s, transform 0.2s;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background: #0f9d58;
-  transform: translateY(-2px);
-}
-</style>
-
-<style>
-.cta-button.secondary {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-  margin-left: 0.75rem;
-}
-
-.cta-button.secondary:hover {
-  background: rgba(255,255,255,0.15);
-  transform: translateY(-2px);
-}
-</style>
 
 </div>
 
 <footer>
-  © 2026 Tech Made Easy ZA · Educational services
+© 2026 Tech Made Easy ZA • Proudly local & student-run
 </footer>
 
 </body>
