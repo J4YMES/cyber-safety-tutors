@@ -1,1 +1,1 @@
-# cyber-safety-classes
+# Tech-Made-Easy-ZA
